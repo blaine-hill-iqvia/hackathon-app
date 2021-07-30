@@ -6,7 +6,7 @@ export const UserMain = () => {
     <div className="max-w-md mx-auto my-10 border-2 border-gray-300 shadow-lg rounded-md">
       <div className="text-center">
         <h1 className="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
-          IQVIA Retention Portal Demo
+          Retention Portal Demo
         </h1>
         <p className="text-gray-500 dark:text-gray-400">
           Built with React + NodeJS + Tailwind
