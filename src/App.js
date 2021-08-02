@@ -8,6 +8,7 @@ import Tier from "./components/Tier";
 
 import "./App.css";
 import { SignInPage } from "./components/SignInPage";
+import { SurveySecondPage } from "./components/SurveySecondPage";
 
 function App() {
   const [score, setScore] = useState(0);
@@ -23,7 +24,7 @@ function App() {
           </Switch>
           <Switch>
             <Route path="/survey">
-              <Survey score={score} setScore={setScore} />
+              <SurveySecondPage score={score} setScore={setScore} />
             </Route>
           </Switch>
           <Switch>
