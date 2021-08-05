@@ -2,8 +2,6 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-import Home from "./components/Home";
-import Survey from "./components/Survey";
 import Tier from "./components/Tier";
 
 import "./App.css";
