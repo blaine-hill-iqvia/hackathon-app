@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Survey( {score, setScore}) {
+export default function Survey( { score, setScore } ) {
 
 
 

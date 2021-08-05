@@ -1,7 +1,11 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import {Link} from 'react-router-dom';
 
-const SurveySecond = () => {
+const SurveySecond = ( { score, setScore }) => {
+
+  setScore(72)
+
   const {
     register,
     formState: { errors },
@@ -11,6 +15,8 @@ const SurveySecond = () => {
   const onSubmit = async (data) => {
     const { name, title, email, status, region } = data;
     console.log(name);
+
+    // on submit calculate score and setScore
   };
 
   return (
@@ -92,13 +98,14 @@ const SurveySecond = () => {
           <option value="germany">Germany</option>
           <option value="france">France</option>
         </select>
-
-        <button
-          className="mt-4 w-full px-3 py-4 text-white text-center bg-blue-500 rounded-md focus:bg-blue-600 focus:outline-none"
-          type="submit"
-        >
-          Submit
-        </button>
+        <Link to="/tier">
+          <button
+            className="mt-4 w-full px-3 py-4 text-white text-center bg-blue-500 rounded-md focus:bg-blue-600 focus:outline-none"
+            type="submit"
+          >
+            Submit
+          </button>
+        </Link>
       </form>
     </div>
   );

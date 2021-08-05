@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Home from "./components/Home";
 import Survey from "./components/Survey";
