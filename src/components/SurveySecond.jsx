@@ -1,10 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 import { useForm } from "react-hook-form";
 import {Link} from 'react-router-dom';
 
 const SurveySecond = ( { score, setScore }) => {
-
-  setScore(72)
 
   const {
     register,
@@ -15,7 +13,6 @@ const SurveySecond = ( { score, setScore }) => {
   const onSubmit = async (data) => {
     const { name, title, email, status, region } = data;
     console.log(name);
-
     // on submit calculate score and setScore
   };
 
@@ -138,12 +135,12 @@ const SurveySecond = ( { score, setScore }) => {
 
 
         <label className="text-gray-600 font-medium block mt-4">
-          Age
+          How far are you from the clinical site?
         </label>
         <select
           className="w-full h-10 pl-3 pr-6 text-base text-gray-600 border-solid border-gray-300 border rounded appearance-none focus:shadow-outline"
           {...register("age", {
-            required: "Please choose a range that contains your age",
+            required: "Please choose a range that describes your range",
           })}
         >
           <option value="0-20">0-20 miles</option>

@@ -11,25 +11,86 @@ export default function Tier( { score } ) {
     
     if(score <= 70 && score > 0){
       return(
-        <h4>You don't qualify for anything</h4>
+        <div className="flex items-center min-h-screen bg-white dark:bg-gray-900">
+          <div className="mb-3 m-auto py-10 mt-1 px-9 rounded border-b shadow border-gray-200">
+            <div className="container mx-auto">
+              <img
+                className="block h-8 mx-auto "
+                src="https://www.iqvia.com/-/media/iqvia/iqvia-logo-color.svg"
+                alt="IQVIA"
+              />
+            </div>
+            <div className="max-w-2xl px-9 mx-auto">
+              <h4 className="font-semibold text-3xl pt-3 text-gray-700 text-center">
+                You don't qualify for anything
+              </h4>
+            </div>
+          </div>
+      </div>
       )
     }
 
     else if(score <= 80 && score > 70){
       return(
-        <h4>You're in the Bronze Tier!</h4>
+        <div className="flex items-center min-h-screen bg-white dark:bg-gray-900">
+          <div className="mb-3 m-auto py-10 mt-1 px-9 rounded border-b shadow border-gray-200">
+            <div className="container mx-auto">
+              <img
+                className="block h-8 mx-auto "
+                src="https://www.iqvia.com/-/media/iqvia/iqvia-logo-color.svg"
+                alt="IQVIA"
+              />
+            </div>
+            <div className="max-w-2xl px-9 mx-auto">
+              <h4 className="font-semibold text-3xl pt-3 text-gray-700 text-center">
+                You're in the Bronze Tier!
+              </h4>
+            </div>
+          </div>
+      </div>
       )
     }
 
     else if(score <= 90 && score > 80){
       return(
-        <h4>You're in the Silver Tier!</h4>
+        <div className="flex items-center min-h-screen bg-white dark:bg-gray-900">
+          <div className="mb-3 m-auto py-10 mt-1 px-9 rounded border-b shadow border-gray-200">
+            <div className="container mx-auto">
+              <img
+                className="block h-8 mx-auto "
+                src="https://www.iqvia.com/-/media/iqvia/iqvia-logo-color.svg"
+                alt="IQVIA"
+              />
+            </div>
+            <div className="max-w-2xl px-9 mx-auto">
+              <h4 className="font-semibold text-3xl pt-3 text-gray-700 text-center">
+                You're in the Silver Tier!
+              </h4>
+            </div>
+          </div>
+      </div>
       )
     }
 
     else if(score <= 100 && score > 90){
       return(
-        <h4>You're in the Gold Tier!</h4>
+      <div className="flex items-center min-h-screen bg-white dark:bg-gray-900">
+        <div className="mb-3 m-auto py-10 mt-1 px-9 rounded border-b shadow border-gray-200">
+          <div className="container mx-auto">
+            <img
+              className="block h-8 mx-auto "
+              src="https://www.iqvia.com/-/media/iqvia/iqvia-logo-color.svg"
+              alt="IQVIA"
+            />
+          </div>
+          <div className="max-w-2xl px-9 mx-auto">
+            <h4 className="font-semibold text-3xl pt-3 text-gray-700 text-center">
+              You're in the Gold Tier!
+            </h4>
+          </div>
+        </div>
+    </div>
+        
       )
     }
 
